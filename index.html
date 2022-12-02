@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Ruslan+Display&display=swap"
@@ -21,14 +24,16 @@
     <div class="scroll-container">
 
         <section class="page-1">
-            <div class="navbar">
+            <div class="navbar-nodaisy">
                 <div class="logo">
                     <a>A</a>
                 </div>
                 <div class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="./html/artists.html">Artists</a>
+                    <div class="tabs">
+                        <a class="tab tab-bordered" href="#about">About</a>
+                        <a class="tab tab-bordered" href="#services">Services</a>
+                        <a class="tab tab-bordered tab-active" href="./pages/artists.html">Artists</a>
+                    </div>
                 </div>
             </div>
             <div class="page-1-content">
@@ -39,6 +44,7 @@
         </section>
 
         <section class="page-2" id="page-2">
+            <img class="page-2-img" src="https://images.unsplash.com/photo-1574014809010-eee047c196ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Arabax">
             <div class="page-2-content">
                 <h1>Arabax Music Festival</h1>
                 <p>NEW VIBES,</p>
