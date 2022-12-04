@@ -4,6 +4,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar-nodaisy {
@@ -209,6 +210,7 @@ img.page-2-img {
 .page-3{
   background-color: black;
   display: flex;
+  overflow-x: hidden;
 }
 
 .left{
@@ -218,6 +220,7 @@ img.page-2-img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .right{
@@ -227,4 +230,6 @@ img.page-2-img {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow-x: hidden;
+  margin-right: 5rem;
 }

@@ -1,24 +1,15 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
     overflow-x: hidden;
-}
-
-img.background {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    filter: blur(10px);
+    color: white;
 }
 
 .navbar-nodaisy {
+    position: static;
     z-index: 100;
     display: flex;
     flex-direction: row;
@@ -68,43 +59,27 @@ img.background {
         0 0 300px #f5f5f5, 0 0 400px #f5f5f5;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+img.background {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
     width: 100%;
+    height: 100%;
+    filter: blur(10px);
 }
 
-.card {
-    margin: 0.7rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-    scale: 1.1;
-}
-
-h1,
-h2,
-p {
-    color: #ffff;
-}
-
-.card-body h1 {
-    font-size: 2rem !important;
-}
-
-.card-title {
-    margin-bottom: 2rem;
-}
-
-.div {
+ul {
+    margin-right: 0;
+    border: solid;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
-    margin: 5rem;
+    text-align: left;
+    gap: 1rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
 }
