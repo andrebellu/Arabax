@@ -1,196 +1,230 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-nodaisy {
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 5rem;
-  background: transparent;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: transparent;
 }
 
 .nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem;
-  gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 5rem;
 }
 
 .nav-links a {
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  color: white;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: white;
 
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-  color: black;
+    color: black;
 }
 
 .logo {
-  cursor: default;
-  font-size: 5rem;
-  color: white;
-  font-family: "Ruslan Display", cursive;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  color: white;
-  transition: all 0.5s ease-in-out;
+    cursor: default;
+    font-size: 5rem;
+    color: white;
+    font-family: "Ruslan Display", cursive;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 .logo:hover {
-  color: #f5f5f5;
-  text-shadow: 0 0 10px #f5f5f5, 0 0 20px #f5f5f5, 0 0 40px #f5f5f5, 0 0 80px #f5f5f5, 0 0 120px #f5f5f5, 0 0 200px #f5f5f5, 0 0 300px #f5f5f5, 0 0 400px #f5f5f5;
+    color: #f5f5f5;
+    text-shadow: 0 0 10px #f5f5f5, 0 0 20px #f5f5f5, 0 0 40px #f5f5f5,
+        0 0 80px #f5f5f5, 0 0 120px #f5f5f5, 0 0 200px #f5f5f5,
+        0 0 300px #f5f5f5, 0 0 400px #f5f5f5;
 }
 
 .scroll-container {
-  height: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 section {
-  height: 100vh;
+    height: 100vh;
 
-  scroll-snap-align: start;
+    scroll-snap-align: start;
 }
 
 .page-1 {
-  position: relative;
-  height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1574014809010-eee047c196ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    position: relative;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1574014809010-eee047c196ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .page-1::before {
-  z-index: 2;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-color: rgba(255, 82, 0, 0.6);
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: rgba(255, 82, 0, 0.6);
 }
 
 .page-1-content {
-  height: 100%;
-  position: relative;
-  z-index: 5;
-  text-align: center;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-1 h1 {
-  font-size: 7rem;
-  color: white;
-  font-family: "Ruslan Display", cursive;
+    font-size: 7rem;
+    color: white;
+    font-family: "Ruslan Display", cursive;
 
-  line-height: .5;
+    line-height: 0.5;
 }
 
 .page-1 p {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 1rem;
 }
 
 .page-1-content a {
-  font-family: "Poppins", sans-serif;
-  color: white;
+    font-family: "Poppins", sans-serif;
+    color: white;
 
-  padding: 1rem 1rem;
-  border: 2px solid white;
-  border-radius: 2px;
-  text-decoration: none;
+    padding: 1rem 1rem;
+    border: 2px solid white;
+    border-radius: 2px;
+    text-decoration: none;
 
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .page-1-content a:hover {
-  background-color: white;
-  color: #ff5200;
+    background-color: white;
+    color: #ff5200;
 }
 
 .page-2 {
-  height: 100%;
-  position: relative;
+    height: 100%;
+    position: relative;
 }
 
 img.page-2-img {
-  z-index: -2;
-  position: absolute;
-  transform: rotate(180deg);
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  filter: blur(20px);
+    z-index: -2;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
 }
 
 .page-2::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-color: rgba(255, 82, 0, 0.6);
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.19793855042016806) 0%,
+        rgba(0, 0, 0, 0.4892550770308123) 23%,
+        rgba(0, 0, 0, 0.7077424719887955) 51%,
+        rgba(0, 0, 0, 0.8646052170868348) 66%,
+        rgba(0, 0, 0, 1) 82%,
+        rgba(0, 0, 0, 1) 100%
+    );
 }
 
 .page-2-content {
-  height: 80%;
-  position: relative;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  align-content: flex-start;
-  margin-left: 5rem;
+    height: 100%;
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-end;
+    margin-left: 5rem;
 }
 
-.page-2 h1{
-  font-size: 3rem;
-  color: white;
-  font-family: "Poppins", sans-serif;
+.page-2 h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
 
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .page-2 p {
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  color: white;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
 
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
 }
 
 .description {
-  font-size: 1rem !important;
+    font-size: 1rem !important;
+}
+
+.page-3{
+  background-color: black;
+  display: flex;
+}
+
+.left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
