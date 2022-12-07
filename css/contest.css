@@ -82,3 +82,11 @@ ul {
     margin-top: 2rem;
     padding: 1rem;
 }
+
+.scroll-container {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    scroll-behavior: smooth;
+}
